@@ -1,5 +1,5 @@
 import torchvision.models as models
-
+from utils import make_layers
 
 ranges = {
     'vgg11': ((0, 3), (3, 6),  (6, 11),  (11, 16), (16, 21)),
