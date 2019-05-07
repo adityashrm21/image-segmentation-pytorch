@@ -62,3 +62,4 @@ Some output images from the test set after the inference stage:
 ![](img/um_000000.png)
 ![](img/um_000061.png)
 ![](img/um_000017.png)
+![](img/um_000047.png)
