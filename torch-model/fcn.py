@@ -1,3 +1,4 @@
+# adapted from https://github.com/pochih/FCN-pytorch
 import torch.nn as nn
 
 class FCN8s(nn.Module):

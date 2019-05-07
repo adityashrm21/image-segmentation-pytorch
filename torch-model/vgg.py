@@ -1,3 +1,4 @@
+# adapted from https://github.com/pochih/FCN-pytorch
 import torchvision.models as models
 from utils import make_layers
 

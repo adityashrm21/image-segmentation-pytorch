@@ -1,7 +1,7 @@
 # Image Segmentation PyTorch
 Image Segmentation using Fully Convolutional Networks in PyTorch on the [KITTI road dataset](http://www.cvlibs.net/datasets/kitti/eval_road.php).
 
-**Original paper**: [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/abs/1411.4038), 2015, Jonathan Long et al.
+**Original paper** [CVPR '15 best paper honorable mention]: [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/abs/1411.4038), 2015, Jonathan Long et al.
 
 ## Preparing the dataset
 
