@@ -59,6 +59,6 @@ optional arguments:
 
 Some output images from the test set with complex objects (cars, buildings, shade, etc.) after the inference stage:
 
-![](img/um_000061.png)
-![](img/um_000017.png)
-![](img/um_000047.png)
+![](results/um_000061.png)
+![](results/um_000017.png)
+![](results/um_000047.png)
