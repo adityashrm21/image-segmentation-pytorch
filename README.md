@@ -68,10 +68,10 @@ Some output images from the test set with complex objects (cars, buildings, shad
 
 <br>
 
-- Bad examples (lighting conditions, turns, etc.):
+- Bad examples (bad lighting conditions mostly):
 
 <br>
 
 ![](results/uu_000067.png)
-![](results/um_000061.png)
+![](results/um_000067.png)
 ![](results/uu_000033.png)
