@@ -13,48 +13,6 @@ import matplotlib.pyplot as plt
 np.random.seed(1234)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-def draw_image_polygon(image, coordinates):
-    """
-    Extract area of interest (AOI) that was defined by polygon coordinates
-    Parameters:
-    -----------
-    image: numpy.ndarray
-        arrays that represent the image
-    coordinates: list
-        labelled polygon coordinates for each rock type
-
-    Returns:
-    -------
-    out: numpy.ndarray
-        arrays that represent the AOI
-    """
-    # input type check
-    if not isinstance(image,  np.ndarray):
-        raise TypeError("image must be of numpy.ndarray type")
-    if not isinstance(coordinates, list):
-        raise TypeError("coordinates must be of list type")
-
-    width = image.shape[0]
-    height = image.shape[1]
-
-    # input size check
-    if width < 2 or height < 2:
-        raise ValueError("image width and height must be at least 2")
-    if len(coordinates) < 4:
-        raise ValueError("coordinates length should be at least 4")
-    # input value check
-    for pt in coordinates:
-        if pt > width or pt > height:
-            raise ValueError("coordinate indices should be inside the image ")
-
-    mask = np.zeros((width, height))
-    coords = np.array(coordinates)
-    cv2.fillConvexPoly(mask, coords, 1)
-    mask = mask.astype(np.bool)
-    out = np.zeros_like(image)
-    out[mask] = image[mask]
-    return out
-
 def normalize(img, mean, std):
     img = img/255.0
     img[0] = (img[0] - mean[0]) / std[0]
