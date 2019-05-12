@@ -3,10 +3,6 @@ Image Segmentation using Fully Convolutional Networks in PyTorch on the [KITTI r
 
 **Original paper** [CVPR '15 best paper honorable mention]: [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/abs/1411.4038), 2015, Jonathan Long et al.
 
-## Preparing the dataset
-
-Download the dataset from the KITTI Vision Benchmark Suite website. Click on the link corresponding to this dataset: `Download base kit with: left color images, calibration and training labels (0.5 GB)`. Here is the [direct link](http://www.cvlibs.net/download.php?file=data_road.zip) where you would need to provide your email address to request a download link. Once you download the dataset, extract and keep it in the root directory of your project (preferably).
-
 ## Using the repository
 
 Clone the repository to the machine where you want to run the model.
@@ -15,6 +11,10 @@ Clone the repository to the machine where you want to run the model.
 git clone https://github.com/adityashrm21/image-segmentation-pytorch.git
 ```
 It is preferable but not necessary to use a GPU as we are using a pre-trained ImageNet model.
+
+### Preparing the dataset
+
+Download the dataset from the KITTI Vision Benchmark Suite website. Click on the link corresponding to this dataset: `Download base kit with: left color images, calibration and training labels (0.5 GB)`. Here is the [direct link](http://www.cvlibs.net/download.php?file=data_road.zip) where you would need to provide your email address to request a download link. Once you download the dataset, extract and keep it in the root directory of your project (preferably).
 
 ### Requirements
 
